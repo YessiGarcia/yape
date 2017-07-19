@@ -14,16 +14,19 @@
 		<h4>Para comenzar validemos tu número</h4>
 		<p>Recibiras un SMS con un código de validación</p>
 		<div class="row">
-	    	<form class="col s12">
+	    	<form class="col s12" action="#">
 		        <div class="input-field">
 		          <i class="material-icons prefix">stay_primary_portrait</i>
-		          <input  id="cel" type="tel" value="(+51) "
-		          class="validate" name="usrtel" min="1" max="10">
+		          <input  id="cel" type="number"
+		          class="validate" name="usrtel" required>
 		        </div>
-		        <label><input type="checkbox" id="terminos" value=""> Acepto los <a href="#">terminos y condiciones</a></label>
+		        <p class="center">
+			      <input type="checkbox" id="test5" />
+			      <label for="test5">Acepto los <a href="#">terminos y condiciones</a></label>
+			    </p>
 	    	</form>
 	  	</div>		
-		<button id="registro" class="btn disabled">CONTINUAR</button>
+		<a href="codigo.html"><button id="registro" class="btn disabled">CONTINUAR</button></a>
 	</section>
 
 	<script type="text/javascript" src="static/jquery/dist/jquery.min.js"></script>

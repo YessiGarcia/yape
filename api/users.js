@@ -1,3 +1,4 @@
+
 var rn = require('random-number');
 
 module.exports = (router,db) => {

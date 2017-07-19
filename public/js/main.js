@@ -1,11 +1,25 @@
-$(document).ready(function(){
-      $('.carousel.carousel-slider').carousel({fullWidth: true});
-    });
+var cargarPagina = function() {
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
+};
 
-var numero = $("#cel").value;
-var terminos = $("#terminos");
-var registro = $("#registro");
+/*$.post("https://localhost:3000/api/registerNumber"),{
+	"phone": "numero",
+	"terms": "true"
+};
 
-if (numero.length == 10 & terminos.checked == "checked" ){
-	registro.removeClass("disabled");
+$.post("https://localhost:3000/api/resendCode"),{
+	"phone": "numero"
+};
+en esta función intente hacer la validación , busque las expresiones 
+regulares para la validación del númeto telefónico y no lo pude aplicar*/
+function validar(){
+	var numero = $("#numero").val();
+	var terminos = $("#test5").prop("checked");
+	var registro = $("#registro");
+
+	if( !(/^\+\d{2,3}\s\d{9}$/.test(numero)) & !terminos:true){
+		registro.removeClass("disabled");
+	}
 }
+
+$(document).ready(cargarPagina);|
