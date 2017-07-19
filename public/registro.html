@@ -6,15 +6,26 @@
 	<title>Yape</title>
 	<link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="container center">
-	<img src="static/img/icons/phone.png">
-	<h1>Para comenzar validemos tu número</h1>
-	<h5>Recibiras un SMS con un código de validación</h5>
-	<input type="número" name="telefono" ><br>
-	<button type="check" name="numero"></button>
-	<p>Acepto los <a href="#">Términos y condiciones.</a></p>
-	<button class="btn disabled">CONTINUAR</button>
+<body >
+	<section class="container center">
+		<img id="imagen-registro" src="static/img/icons/phone.png">
+		<h4>Para comenzar validemos tu número</h4>
+		<p>Recibiras un SMS con un código de validación</p>
+		<div class="row">
+	    	<form class="col s12">
+		        <div class="input-field">
+		          <i class="material-icons prefix">stay_primary_portrait</i>
+		          <input  id="cel" type="tel" value="(+51) "
+		          class="validate" name="usrtel" min="1" max="10">
+		        </div>
+		        <label><input type="checkbox" id="terminos" value=""> Acepto los <a href="#">terminos y condiciones</a></label>
+	    	</form>
+	  	</div>		
+		<button id="registro" class="btn disabled">CONTINUAR</button>
+	</section>
+
 	<script type="text/javascript" src="static/jquery/dist/jquery.min.js"></script>
   	<script type="text/javascript" src="static/materialize-css/dist/js/materialize.min.js"></script>
   	<script type="text/javascript" src="static/js/main.js"></script>
