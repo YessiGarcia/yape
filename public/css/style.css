@@ -76,6 +76,35 @@ a{
 .ayuda img{
 	height: 30px;
 }
+.ultima{
+	margin:0;
+	padding: 0;
+}
+.morado-claro{
+	background: #451e36;
+}
+.ajustes{
+	position:absolute;
+	left: 90%;
+	height:30px;
+	top: 10px;
+}
+.morado_imagen{
+	height: 150px;
+	width: 150px;
+}
+.morado-oscuro{
+	background: #38052a;
+	padding-top: 5px;
+	padding-bottom: 1px;
+}
+.abajo{
+	padding-top: 100px;
+}
+.imagen{
+	height: 100px;
+	width: 100px;
+}
 @media(min-width: 600px){
 	.carousel{
 	height: 400px !important;
