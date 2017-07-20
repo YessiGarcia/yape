@@ -1,12 +1,15 @@
 section{
-	padding-top: 50px;
+	padding: 50px ;
+
+}
+a{
+	text-decoration: none;
 }
 .carousel{
-	height: 500px !important;
+	height: 400px !important;
 }
-.carousel img{
-	width: 300px;
-	height: 300px;
+.carousel-item>img{
+	width: 230px !important;
 }
 .indicator-item{
 	background: gray !important;
@@ -14,32 +17,75 @@ section{
 .indicators .active{
 	background: red !important;
 }
-button{
+.icono-formulario{
+	height: 30px;
+	position: relative;
+	top: 10px;
+}
+.icono-reloj{
+	height: 10px;
+}
+.regreso{
+	position: absolute;
+	color: #000;
+}
+.boton{
 	background-color: #fbd43b;
 	color: #fff;
 	font-size: 3vh;
-	padding: 3%;
+	border: none;
+	height: 30px;
 }
 .boton-inicio{
 	width: 100%;	
 }
-#imagen-registro{
+.imagen-sec{
 	height: 150px;
 }
 #cel{
-	display: inline-block !important;
+	width: 70%;
 }
-
+#codigo{
+	margin-bottom: 0;
+	width: 70%;
+}
+.amarillo{
+	margin: 0;
+	padding: 0;
+	background:#fbd43b; 
+	color: #38052a;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.amarillo img{
+	height: 20vh;
+}
+.amarillo h2{
+	margin: 0;
+}
+.vigencia{
+	height: 1.5rem !important;
+}
+.ayuda{
+	position: absolute;
+	left: 90%;
+}
+.ayuda img{
+	height: 30px;
+}
 @media(min-width: 600px){
 	.carousel{
-	height: 800px !important;
+	height: 400px !important;
 	}
 	.carousel img{
 		width: 300px;
-		height: 600px;
+		height: 220px;
 	}
 	.boton-inicio{
 	width: 30%;	
-	height: 30%;
-}
+	height: px;
+    }
 }

@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Yape</title>
+	<title>Registro</title>
 	<link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body >
-	<section class="container center">
-		<img id="imagen-registro" src="static/img/icons/phone.png">
+	<section class="registro container center">
+		<img class="imagen-sec" src="static/img/icons/phone.png">
 		<h4>Para comenzar validemos tu número</h4>
 		<p>Recibiras un SMS con un código de validación</p>
 		<div class="row">
 	    	<form class="col s12" action="#">
 		        <div class="input-field">
-		          <i class="material-icons prefix">stay_primary_portrait</i>
+		          <img class="icono-formulario" src="static/img/icons/phoneandnumber.png">
 		          <input  id="cel" type="number"
 		          class="validate" name="usrtel" required>
 		        </div>
@@ -26,9 +26,9 @@
 			    </p>
 	    	</form>
 	  	</div>		
-		<a href="codigo.html"><button id="registro" class="btn disabled">CONTINUAR</button></a>
+		<a id="registro"><button class="boton">CONTINUAR</button></a>
 	</section>
-
+	
 	<script type="text/javascript" src="static/jquery/dist/jquery.min.js"></script>
   	<script type="text/javascript" src="static/materialize-css/dist/js/materialize.min.js"></script>
   	<script type="text/javascript" src="static/js/main.js"></script>

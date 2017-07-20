@@ -3,29 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Código</title>
+	<title>Usuario</title>
 	<link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-	<a class="regreso" href="registro.html"><i class="material-icons">navigate_before</i></a>
 	<section class="container center">
-		<img class="imagen-sec" src="static/img/icons/message.png">
-		<h4>Ahora ingresa tu código</h4>
-		<p>Enviamos un SMS con el código de validación al númeto 1234567890</p>		
+		<img class="imagen-sec" src="static/img/icons/lockone.png">
+		<h4>Crea tu usuario Yape</h4>
+		<p>Ingresa nombre, email y clave de usuario</p>		
 		<div class="row">
 	    	<form class="col s12" action="#">
 		        <div class="input-field">
+		          <img class="icono-formulario" src="static/img/icons/user.png">
+		          <input class="center" placeholder="Nombre" id="codigo" type="text" required>
+		        </div>
+		        <div class="input-field">
+		          <img class="icono-formulario" src="static/img/icons/message-gray.png">
+		          <input class="center" placeholder="Correo@ejemplo.com" id="codigo" type="email" required>
+		        </div>
+		        <div class="input-field">
 		          <img class="icono-formulario" src="static/img/icons/lock.png">
-		          <input  id="codigo" type="number" required>
+		          <input class="center" placeholder="Ingresa clave de 6 digitos" id="codigo" type="password" required>
 		        </div>
 		        <p class="center">
-			      <label for="test5">Reintentar en 21 <img class="icono-reloj" src="static/img/icons/clock.png"> segundos</label>
+			      <label>Cuida esta clave como oro, es tu acceso a Yape</label>
 			    </p>
-			    <a href="usuario.html">SIGUIENTE</a>
 	    	</form>
-	  	</div>		
+	  	</div>
+	  	<a href="bien.html"><button class="boton">Crear cuenta</button></a>
+	</section>		
 	</section>
 	<script type="text/javascript" src="static/jquery/dist/jquery.min.js"></script>
   	<script type="text/javascript" src="static/materialize-css/dist/js/materialize.min.js"></script>

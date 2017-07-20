@@ -3,30 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Código</title>
+	<title>Tarjeta</title>
 	<link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-	<a class="regreso" href="registro.html"><i class="material-icons">navigate_before</i></a>
-	<section class="container center">
-		<img class="imagen-sec" src="static/img/icons/message.png">
-		<h4>Ahora ingresa tu código</h4>
-		<p>Enviamos un SMS con el código de validación al númeto 1234567890</p>		
+<body >
+	<a class="regreso" href="registro.html"><i class="material-icons">navigate_before</i> Volver</a>
+	<a class="ayuda" href="#"><img src="static/img/icons/question.png"></a>
+	<section class="registro container center">
+		<img class="imagen-sec" src="static/img/icons/bcp-logo.png">
+		<h4>Registra tu tarjeta de débito BCP</h4>
+		<p>Por ahora solo aceptamos tarjetas de ahorro y/o corrientes en soles.</p>
 		<div class="row">
 	    	<form class="col s12" action="#">
 		        <div class="input-field">
 		          <img class="icono-formulario" src="static/img/icons/lock.png">
-		          <input  id="codigo" type="number" required>
+		          <input class="center" id="codigo" type="password" required>
 		        </div>
-		        <p class="center">
-			      <label for="test5">Reintentar en 21 <img class="icono-reloj" src="static/img/icons/clock.png"> segundos</label>
-			    </p>
-			    <a href="usuario.html">SIGUIENTE</a>
 	    	</form>
 	  	</div>		
+		<a href="ultima.html"><button class="boton">REGISTRAR</button></a>
 	</section>
+	
 	<script type="text/javascript" src="static/jquery/dist/jquery.min.js"></script>
   	<script type="text/javascript" src="static/materialize-css/dist/js/materialize.min.js"></script>
   	<script type="text/javascript" src="static/js/main.js"></script>
